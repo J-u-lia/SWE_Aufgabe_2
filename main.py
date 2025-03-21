@@ -1,7 +1,8 @@
-import my_functions as mf
+from my_functions.py import estimate_max_hr
+from my_functions.py import build_person
 
 if __name__ == "__main__":
-    # Create a supervisor and a subject
-    supervisor = mf.build_person("John", "Doe", "male", 30)
-
+    supervisor = build_person("Jan", "Bauer", "male", 35)
 print(supervisor)
+# {'first_name': 'Jan', 'last_name': 'Bauer', 'age': 35, 'estimate_max_hr': 190}
+
